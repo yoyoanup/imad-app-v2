@@ -11,7 +11,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'log.php'));
 });
 
-
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'b.php'));
+});
 
 
 app.get('/ui/style.css', function (req, res) {
